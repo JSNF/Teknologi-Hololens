@@ -4,93 +4,247 @@ html
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
     title TKPPL
-    
-    link(rel='stylesheet', type='text/css', href='build/build.css')
- 
+    style.
+      img{
+      margin-bottom: 10px;
+      border-radius: 10px;
+      width: 200px;
+      height: 200px;
+      float: right;
+      }
+      b{
+      color:green;
+      }
+      .tengah p{
+      float: left;
+      text-align: left;
+      padding :none;
+      width: 500px;
+      color: black;
+      }
+      h2{
+      text-align: center;
+      color:black;
+      font-family: "Times New Roman";
+      }
+      h1
+      {
+      color:black;
+      font-family: serif;
+      }
+      .header, .a,.b,.c,.d
+      {
+      background-color:white;
+      border-radius: 100%;
+      }
+      li{
+      color : black;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: left;
+      }
+      h3{
+      color:green;
+      }
+      .a,.b,.c,.d
+      {
+      border-radius: 100%;
+      }
+      code[class*="language-"],
+      pre[class*="language-"] {
+      color: #f8f8f2;
+      background: none;
+      text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+      font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+      text-align: left;
+      white-space: pre;
+      word-spacing: normal;
+      word-break: normal;
+      word-wrap: normal;
+      line-height: 1.5;
+      -moz-tab-size: 4;
+      tab-size: 4;
+      -webkit-hyphens: none;
+      -moz-hyphens: none;
+      -ms-hyphens: none;
+      hyphens: none;
+      }
+      /* Code blocks */
+      pre[class*="language-"] {
+      padding: 1em;
+      margin: .5em 0;
+      overflow: auto;
+      border-radius: 0.3em;
+      }
+      :not(pre) > code[class*="language-"],
+      pre[class*="language-"] {
+      background: #272822;
+      }
+      /* Inline code */
+      :not(pre) > code[class*="language-"] {
+      padding: .1em;
+      border-radius: .3em;
+      white-space: normal;
+      }
+      .token.comment,
+      .token.prolog,
+      .token.doctype,
+      .token.cdata {
+      color: slategray;
+      }
+      .token.punctuation {
+      color: #f8f8f2;
+      }
+      .namespace {
+      opacity: .7;
+      }
+      .token.property,
+      .token.tag,
+      .token.constant,
+      .token.symbol,
+      .token.deleted {
+      color: #f92672;
+      }
+      .token.boolean,
+      .token.number {
+      color: #ae81ff;
+      }
+      .token.selector,
+      .token.attr-name,
+      .token.string,
+      .token.char,
+      .token.builtin,
+      .token.inserted {
+      color: #a6e22e;
+      }
+      .token.operator,
+      .token.entity,
+      .token.url,
+      .language-css .token.string,
+      .style .token.string,
+      .token.variable {
+      color: #f8f8f2;
+      }
+      .token.atrule,
+      .token.attr-value,
+      .token.function {
+      color: #e6db74;
+      }
+      .token.keyword {
+      color: #66d9ef;
+      }
+      .token.regex,
+      .token.important {
+      color: #fd971f;
+      }
+      .token.important,
+      .token.bold {
+      font-weight: bold;
+      }
+      .token.italic {
+      font-style: italic;
+      }
+      .token.entity {
+      cursor: help;
+      }
+      body {
+      font: 12px Helvetica, Arial, sans-serif;
+      background-color: #537;
+      }
+      a.button {
+      border-radius: 5px;
+      }
   body
-  
-  
     article
-
-      section
-        h1 Hololens
-        h3 Nama Kelompok :
+      section.a
+        h1 Hololenssss
         ul
-        li1. Nadhilah Putri Nst 151111526
-        li2. Jesika Nauly Hutagalung 151112262
-        li3. Sari Feronika Sitorus 151113462
-        li4. Fadly Pranata Simanungkalit 151111992
-      section
-        
+          li
+            h3 Nama Anggota Kelompok :
+          li 1.Nadhilah Putri Nst 151111526
+          li 2.Jesika Nauly Hutagalung 151112262
+          li 3.Sari Feronika Sitorus 151113462
+          li 4.Fadly Pranata Simanungkalit 151111992
+      section.b
         h2 Pengertian Hololens
-        p Microsoft HoloLens adalah sebuah teknologi komputasi visual yang memiliki fungsi mirip seperti kacamata pintar. Microsoft Hololens menggabungkan antara virtual reality dan augmented reality sehingga menciptakan mixed reality. Mixed reality memungkinkan membawa tampilan grafis dalam dunia virtual ke dalam dunia nyata. Pengguna bisa berinteraksi dengan benda virtual yang dihasilkan oleh microsoft hololens. 
-        <a href="https://id.wikipedia.org/wiki/Microsoft_Hololens">Microsoft Hololens</a>
-
+        p
+          b Microsoft HoloLens
+          |  adalah 
+          img(src='build/hol.jpg')
+          | sebuah teknologi komputasi visual yang memiliki fungsi mirip seperti kacamata pintar. Microsoft Hololens menggabungkan antara virtual reality dan augmented reality sehingga menciptakan mixed reality. Mixed reality memungkinkan membawa tampilan grafis dalam dunia virtual ke dalam dunia nyata. Pengguna bisa berinteraksi dengan benda virtual yang dihasilkan oleh microsoft hololens.
       section
-        h2 Contoh yang bisa Dimunculkan Microsoft Hololens
-        h3 Contohnya pada sebuah dinding kosong ,hololens ini bisa menampilkan sebuah layar televisi atau misalnya pada kulkas hololens bisa memperlihatkan bahan makanan apa saja yang harus kita beli .HoloLens ini juga mendukung produktivitas dan hiburan Kita dapat menggunakan HoloLens untuk merancang desain 3D, apakah itu rumah, motor, mobil, helicopter, bahkan pesawat sekaligus. 
-
+        h2 Cara Kerja Microsoft Hololens
+        h3
+          | Pada sebuah dinding kosong ,hololens ini bisa menampilkan sebuah layar televisi misalnya pada kulkas hololens bisa memperlihatkan bahan makanan apa saja yang harus kita beli .HoloLens ini juga mendukung produktivitas dan hiburan. Kita dapat menggunakan HoloLens untuk merancang desain 3D, apakah itu rumah, motor, mobil, helicopter, bahkan pesawat sekaligus.
       section
         h2 Spesifikasi Teknis
-        p Optics :
-
-                               li See-through holographic lenses (waveguides)
-                               li 2 HD 16:9 light engines
-                               li Automatic pupillary distance calibration
-                               li Holographic Resolution: 2.3M total light points
-                               li Holographic Density: >2.5k radiants (light points per radian)
-        p Sensors :
-
-                               li 1 IMU
-                               li 4 environment understanding cameras
-                               li 1 depth camera
-                               li 1 2MP photo / HD video camera
-                               li Mixed reality capture
-                               li 4 microphones
-                               li 1 ambient light sensor
-
-
-
+        ul
+          | Optics :
+          li See-through holographic lenses (waveguides)
+          li 2HD 16:9 light engines
+          li Automatic pupillary distance calibration
+          li Holographic Resolution: 2.3M total light points
+          li Holographic Density: >2.5k radiants (light points per radian)
+        ul
+          | Sensors :
+          li 1 IMU
+          li 4 environment understanding cameras
+          li 1 depth camera
+          li 1 2MP photo / HD video camera
+          li Mixed reality capture
+          li 4 microphones
+          li 1 ambient light sensor
       section
         h2 Bullet List
-        h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
+        h3.bullet
+          | Powered by 
+          a(href='https://github.com/markdalgleish/bespoke-bullets') bespoke-bullets
         ul
           li Bullet 1
           li Bullet 2
           li Bullet 3
-
       section
         h2 Syntax Highlighting
-        h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
-        pre
-          code.language-javascript.
-            bespoke.from('article', [
-              classes(),
-              keys(),
-              touch(),
-              bullets('li, .bullet')
-            ]);
-
+        h3
+          | Powered by 
+          a(href='http://twitter.com/LeaVerou') Lea Verou
+          | 's 
+          a(href='https://github.com/LeaVerou/prism') Prism
+        pre.
       section(data-bespoke-hash='named-route')
         h2 Named Route
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
-        p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
-
+        h3
+          | Powered by 
+          a(href='https://github.com/markdalgleish/bespoke-hash') bespoke-hash
+        p
+          | Look up! This route has been named with a 
+          em 'data-bespoke-hash'
+          |  attribute.
       section.emphatic-text(data-bespoke-backdrop='emphatic')
         h2 Emphatic Slide!
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
-
+        h3
+          | Powered by 
+          a(href='https://github.com/markdalgleish/bespoke-backdrop') bespoke-backdrop
       section
         h2.bullet Just the beginning...
         br
         ul
-          li Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em>
-          li Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
-          li Edit JavaScript in <em>'src/scripts/main.js'</em>
+          li
+            | Edit 
+            a(href='http://jade-lang.com/') Jade
+            |  markup in 
+            em 'src/index.jade'
+          li
+            | Edit 
+            a(href='http://learnboost.github.io/stylus/') Stylus
+            |  styles in 
+            em 'src/styles/main.styl'
+          li
+            | Edit JavaScript in 
+            em 'src/scripts/main.js'
         br
         ul
           li
             strong Enjoy! :)
             a(href='http://twitter.com/markdalgleish')  -@markdalgleish
-
     script(src='build/build.js')

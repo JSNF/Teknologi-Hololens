@@ -6,11 +6,43 @@ html
     title TKPPL
     style.
       img{
-      margin-bottom: 10px;
-      border-radius: 10px;
-      width: 200px;
-      height: 200px;
-      float: right;
+      width: 250px;
+      height: 250px;
+      }
+      #slider {
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+      border: 1px solid #0089f3;
+      }
+      .slide {
+      width: 250px;
+      height: 250px;
+      float: left;
+      position: relative;
+      }
+      #slide-holder {
+      width: 410%;
+      position: relative;
+      animation: scroller 20s infinite;
+      }
+      @keyframes scroller {
+      0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      }
+      33% {
+      -webkit-transform: translateX(-400px);
+      transform: translateX(-400px);
+      }
+      66% {
+      -webkit-transform: translateX(-800px);
+      transform: translateX(-800px);
+      }
+      100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      }
       }
       b{
       color:#1cf3ff;
@@ -19,6 +51,7 @@ html
       {
       color:yellow;
       text-align: justify;
+      margin: 0px;
       }
       .tengah p{
       float: left;
@@ -37,7 +70,7 @@ html
       color:#ae81ff;;
       font-family: Monotype Corsiva;
       }
-      .header, .a,.b,.c,.d,.z,.y
+      .header, .a,.b,.c,.d,.z,.y,.x,.w
       {
       background-color: rgba(0, 0, 0, 0);
       border-radius: 100%;
@@ -54,10 +87,6 @@ html
       h3.c{
       color: crimson;
       font-size: 30px;
-      }
-      .a,.b,.c,.d
-      {
-      border-radius: 100%;
       }
       code[class*="language-"],
       pre[class*="language-"] {
@@ -158,7 +187,7 @@ html
       }
       body {
       font: 12px Helvetica, Arial, sans-serif;
-      background-image:url(night.jpg);
+      background-image:url(gbr/night.jpg);
       background-size:cover;
       }
       a.button {
@@ -167,9 +196,18 @@ html
       .z h4{
       color:white;
       }
-      p{
-      font-size: 15px;
+      .w h2{
+      font-size:3em;
+      }
+      .w p{
+      text-align: justify;
       color: white;
+      font-size: 15px;
+      margin: 0px;
+      }
+      .x h1{
+      color: #a6e22e;
+      font-family: Colonna MT;
       }
   body
     article
@@ -185,11 +223,19 @@ html
           li 4.Fadly Pranata Simanungkalit 151111992
       section.b
         h2 Pengertian Hololens
+        #slider
+          #slide-holder
+            .slide
+              img(src='gbr/hol.jpg', alt='')
+            .slide
+              img(src='gbr/hol2.jpg', alt='')
+            .slide
+              img(src='gbr/hol3.jpg', alt='')
+            .slide
+              img(src='gbr/hololens.jpg', alt='')
         p
           b Microsoft HoloLens
-          |  adalah 
-          img(src='build/hol.jpg')
-          | sebuah teknologi komputasi visual yang memiliki fungsi mirip seperti kacamata pintar. Microsoft Hololens menggabungkan antara virtual reality dan augmented reality sehingga menciptakan mixed reality. Mixed reality memungkinkan membawa tampilan grafis dalam dunia virtual ke dalam dunia nyata. Pengguna bisa berinteraksi dengan benda virtual yang dihasilkan oleh microsoft hololens.
+          |  adalah sebuah teknologi komputasi visual yang memiliki fungsi mirip seperti kacamata pintar. Microsoft Hololens menggabungkan antara virtual reality dan augmented reality sehingga menciptakan mixed reality. Mixed reality memungkinkan membawa tampilan grafis dalam dunia virtual ke dalam dunia nyata. Pengguna bisa berinteraksi dengan benda virtual yang dihasilkan oleh microsoft hololens.
       section.z
         h2 Cara Kerja Microsoft Hololens
         h4
@@ -240,6 +286,18 @@ html
           li a. Intel 32 bit architecture
           li b. Microsoft Holographic Processing Unit (HPU 1.0)
       section.y
+        h2 Kelebihan Hololens:
+        h3.c Ada 5 kelebihan Hololens:
+        ul
+          li 1. Tidak memiliki kabel, jadi tidak perlu terhubung dengan komputer
+          li
+            | 2. Lensa transparan dan sensor canggih sehingga pemakai bisa seakan-akan berada didalam apa yang dilihatnya
+          li
+            | 3. Ringan dan dapat disesuaikan dengan ukuran kepala masing-masing orang sehingga nyaman ketika digunakan.
+          li
+            | 4. Built-in suara spasial memungkinkan pemakai mendengar hologram dimanapun mereka berada di ruangan dengan posisi yang tepat.
+          li 5. Teknologi dimasa depan terbaru yang beroperasi di Windows 10 
+      section.y
         h2 Kelemahan Hololens:
         h3.c Ada 7 kelemahan Hololens:
         ul
@@ -250,11 +308,13 @@ html
           li 5. HoloLens akan melindungi diri dengan membunuh aplikasi Anda
           li 6. Anda dapat merekam hologram, tapi hanya sebentar
           li 7. Anda dapat mengontrol HoloLens jarak jauh
-      section.z
-        h3 Perbedaan Hololens dan Virtual Reality
+      section.w
+        h2 Perbedaan Hololens dan Virtual Reality
         br
         p
           | Holoens itu adalah pengabungan dari augmented reality sehingga menciptakan mixed reality.
         p
           | Virtual reality adalah teknologi yang dapat berinteraksi dengan suatu lingkungan yang disimulasikan oleh komputer.
+      section.x
+        h1 Thank You
     script(src='build/build.js')

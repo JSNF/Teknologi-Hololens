@@ -5,18 +5,56 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
     title TKPPL
     style.
+      .card-container {
+      cursor: pointer;
+      height: 200px;
+      perspective: 600;
+      position: relative;
+      width: 250px;
+      float: left;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      }
+      .card-container img{
+      width: 100%;
+      height: 100%;
+      }
+      .card {
+      height: 100%;
+      position: absolute;
+      transform-style: preserve-3d;
+      transition: all 1s ease-in-out;
+      width: 100%;
+      }
+      .card:hover {
+      transform: rotateY(180deg);
+      }
+      .card .side {
+      backface-visibility: hidden;
+      border-radius: 6px;
+      height: 100%;
+      position: absolute;
+      overflow: hidden;
+      width: 100%;
+      }
+      .card .back {
+      background: #eaeaed;
+      color: #0087cc;
+      line-height: 150px;
+      text-align: center;
+      transform: rotateY(180deg);
+      }
       img{
       width: 250px;
       height: 250px;
       }
       #slider {
-      width: 250px;
+      width: 280px;
       height: 250px;
       overflow: hidden;
-      border: 1px solid #0089f3;
       }
       .slide {
-      width: 250px;
+      width: 270px;
       height: 250px;
       float: left;
       position: relative;
@@ -24,7 +62,7 @@ html
       #slide-holder {
       width: 410%;
       position: relative;
-      animation: scroller 20s infinite;
+      animation: scroller 15s infinite;
       }
       @keyframes scroller {
       0% {
@@ -79,7 +117,7 @@ html
       color : white;
       font-size: 20px;
       font-weight: bold;
-      text-align: justify;
+      text-align: left;
       }
       h3{
       color:#1cf3ff;
@@ -185,9 +223,9 @@ html
       .token.entity {
       cursor: help;
       }
-      body{
+      body {
       font: 12px Helvetica, Arial, sans-serif;
-      background-image:url(gbr/night.jpg);
+      background-image:url(img/night.jpg);
       background-size:cover;
       }
       a.button {
@@ -209,6 +247,41 @@ html
       color: #a6e22e;
       font-family: Colonna MT;
       }
+      @keyframes slide {
+      0% {
+      left: 0;
+      top: 0;
+      }
+      50% {
+      left: 244px;
+      top: 100px;
+      }
+      100% {
+      left: 488px;
+      top: 0;
+      }
+      }
+      .stage {
+      height: 150px;
+      position: relative;
+      min-width: 538px;
+      }
+      .stage:hover .ball {
+      animation-name: slide;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-delay: .5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      }
+      .ball {
+      height: 50px;
+      position: absolute;
+      width: 80px;
+      }
+      .ball h1{
+      float: left;
+      }
   body
     article
       section.a
@@ -224,17 +297,19 @@ html
           li 3.Sari Feronika Sitorus 151113462
           li 4.Fadly Pranata Simanungkalit 151111992
       section.b
-        h2 Pengertian Hololens
+        ul
+          li
+            h2 Pengertian Microsoft Hololens
         #slider
           #slide-holder
             .slide
-              img(src='gbr/hol.jpg', alt='')
+              img(src='img/hololen.jpg', alt='')
             .slide
-              img(src='gbr/hol2.jpg', alt='')
+              img(src='img/hol2.jpg', alt='')
             .slide
-              img(src='gbr/hol3.jpg', alt='')
+              img(src='img/hol3.jpg', alt='')
             .slide
-              img(src='gbr/hololens.jpg', alt='')
+              img(src='img/t.jpg', alt='')
         p
           b Microsoft HoloLens
           |  adalah sebuah teknologi komputasi visual yang memiliki fungsi mirip seperti kacamata pintar. Microsoft Hololens menggabungkan antara virtual reality dan augmented reality sehingga menciptakan mixed reality. Mixed reality memungkinkan membawa tampilan grafis dalam dunia virtual ke dalam dunia nyata. Pengguna bisa berinteraksi dengan benda virtual yang dihasilkan oleh microsoft hololens.
@@ -246,6 +321,29 @@ html
           li
             h4
               | Pada sebuah dinding kosong ,hololens ini bisa menampilkan sebuah layar televisi misalnya pada kulkas hololens bisa memperlihatkan bahan makanan apa saja yang harus kita beli .HoloLens ini juga mendukung produktivitas dan hiburan. Kita dapat menggunakan HoloLens untuk merancang desain 3D, apakah itu rumah, motor, mobil, helicopter, bahkan pesawat sekaligus.
+      section.z
+        .kiri
+          .card-container
+            .card
+              .side
+                img(src='img/g.jpg', alt='')
+              .side.back Microsoft Hololens untuk bermain game 
+          .card-container
+            .card
+              .side
+                img(src='img/h.jpg', alt='')
+              .side.back Microsoft Hololens untuk media sosial
+        .kanan
+          .card-container
+            .card
+              .side
+                img(src='img/hol.jpg', alt='')
+              .side.back Microsoft Hololens untuk bermain game
+          .card-container
+            .card
+              .side
+                img(src='img/hololens.jpg', alt='')
+              .side.back Microsoft Hololens untuk bermain game
       section.y
         ul
           li
@@ -292,10 +390,12 @@ html
         ul
           li
             h2 Spesifikasi Teknis
+        ul
           li
             h3.c OS and Apps :
           li a. Windows 10
           li b. Windows Store
+        ul
           li
             h3.c Processors :
           li a. Intel 32 bit architecture
@@ -339,10 +439,12 @@ html
         ul
           li
             p
-              | Hololens itu adalah pengabungan dari augmented reality sehingga menciptakan mixed reality.
+              | Holoens itu adalah pengabungan dari augmented reality sehingga menciptakan mixed reality.
           li
             p
               | Virtual reality adalah teknologi yang dapat berinteraksi dengan suatu lingkungan yang disimulasikan oleh komputer.
       section.x
-        h1 Thank You
+        .stage
+          figure.ball
+            h1 Thank You
     script(src='build/build.js')

@@ -1,450 +1,164 @@
 doctype html
-html
+html(lang='en')
   head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
-    title TKPPL
-    style.
-      .card-container {
-      cursor: pointer;
-      height: 200px;
-      perspective: 600;
-      position: relative;
-      width: 250px;
-      float: left;
-      margin-left: 10px;
-      margin-bottom: 10px;
-      }
-      .card-container img{
-      width: 100%;
-      height: 100%;
-      }
-      .card {
-      height: 100%;
-      position: absolute;
-      transform-style: preserve-3d;
-      transition: all 1s ease-in-out;
-      width: 100%;
-      }
-      .card:hover {
-      transform: rotateY(180deg);
-      }
-      .card .side {
-      backface-visibility: hidden;
-      border-radius: 6px;
-      height: 100%;
-      position: absolute;
-      overflow: hidden;
-      width: 100%;
-      }
-      .card .back {
-      background: #eaeaed;
-      color: #0087cc;
-      line-height: 150px;
-      text-align: center;
-      transform: rotateY(180deg);
-      }
-      img{
-      width: 250px;
-      height: 250px;
-      }
-      #slider {
-      width: 280px;
-      height: 250px;
-      overflow: hidden;
-      }
-      .slide {
-      width: 270px;
-      height: 250px;
-      float: left;
-      position: relative;
-      }
-      #slide-holder {
-      width: 410%;
-      position: relative;
-      animation: scroller 15s infinite;
-      }
-      @keyframes scroller {
-      0% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-      }
-      33% {
-      -webkit-transform: translateX(-400px);
-      transform: translateX(-400px);
-      }
-      66% {
-      -webkit-transform: translateX(-800px);
-      transform: translateX(-800px);
-      }
-      100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-      }
-      }
-      b{
-      color:#1cf3ff;
-      }
-      .b p
-      {
-      color:yellow;
-      text-align: justify;
-      margin: 0px;
-      }
-      .tengah p{
-      float: left;
-      text-align: left;
-      padding :none;
-      width: 500px;
-      color: black;
-      }
-      h2{
-      text-align: center;
-      color:#ae81ff;
-      font-family: "Times New Roman";
-      }
-      h1
-      {
-      color:#ae81ff;;
-      font-family: Monotype Corsiva;
-      }
-      .header, .a,.b,.c,.d,.z,.y,.x,.w
-      {
-      background-color: rgba(0, 0, 0, 0);
-      border-radius: 100%;
-      }
-      li{
-      color : white;
-      font-size: 20px;
-      font-weight: bold;
-      text-align: left;
-      }
-      h3{
-      color:#1cf3ff;
-      }
-      h3.c{
-      color: crimson;
-      font-size: 30px;
-      }
-      code[class*="language-"],
-      pre[class*="language-"] {
-      color: #f8f8f2;
-      background: none;
-      text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-      font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-      text-align: left;
-      white-space: pre;
-      word-spacing: normal;
-      word-break: normal;
-      word-wrap: normal;
-      line-height: 1.5;
-      -moz-tab-size: 4;
-      tab-size: 4;
-      -webkit-hyphens: none;
-      -moz-hyphens: none;
-      -ms-hyphens: none;
-      hyphens: none;
-      }
-      /* Code blocks */
-      pre[class*="language-"] {
-      padding: 1em;
-      margin: .5em 0;
-      overflow: auto;
-      border-radius: 0.3em;
-      }
-      :not(pre) > code[class*="language-"],
-      pre[class*="language-"] {
-      background: #272822;
-      }
-      /* Inline code */
-      :not(pre) > code[class*="language-"] {
-      padding: .1em;
-      border-radius: .3em;
-      white-space: normal;
-      }
-      .token.comment,
-      .token.prolog,
-      .token.doctype,
-      .token.cdata {
-      color: slategray;
-      }
-      .token.punctuation {
-      color: #f8f8f2;
-      }
-      .namespace {
-      opacity: .7;
-      }
-      .token.property,
-      .token.tag,
-      .token.constant,
-      .token.symbol,
-      .token.deleted {
-      color: #f92672;
-      }
-      .token.boolean,
-      .token.number {
-      color: #ae81ff;
-      }
-      .token.selector,
-      .token.attr-name,
-      .token.string,
-      .token.char,
-      .token.builtin,
-      .token.inserted {
-      color: #a6e22e;
-      }
-      .token.operator,
-      .token.entity,
-      .token.url,
-      .language-css .token.string,
-      .style .token.string,
-      .token.variable {
-      color: #f8f8f2;
-      }
-      .token.atrule,
-      .token.attr-value,
-      .token.function {
-      color: #e6db74;
-      }
-      .token.keyword {
-      color: #66d9ef;
-      }
-      .token.regex,
-      .token.important {
-      color: #fd971f;
-      }
-      .token.important,
-      .token.bold {
-      font-weight: bold;
-      }
-      .token.italic {
-      font-style: italic;
-      }
-      .token.entity {
-      cursor: help;
-      }
-      body {
-      font: 12px Helvetica, Arial, sans-serif;
-      background-image:url(img/night.jpg);
-      background-size:cover;
-      }
-      a.button {
-      border-radius: 5px;
-      }
-      .z h4{
-      color:white;
-      }
-      .w h2{
-      font-size:3em;
-      }
-      .w p{
-      text-align: justify;
-      color: white;
-      font-size: 15px;
-      margin: 0px;
-      }
-      .x h1{
-      color: #a6e22e;
-      font-family: Colonna MT;
-      }
-      @keyframes slide {
-      0% {
-      left: 0;
-      top: 0;
-      }
-      50% {
-      left: 244px;
-      top: 100px;
-      }
-      100% {
-      left: 488px;
-      top: 0;
-      }
-      }
-      .stage {
-      height: 150px;
-      position: relative;
-      min-width: 538px;
-      }
-      .stage:hover .ball {
-      animation-name: slide;
-      animation-duration: 2s;
-      animation-timing-function: ease-in-out;
-      animation-delay: .5s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      }
-      .ball {
-      height: 50px;
-      position: absolute;
-      width: 80px;
-      }
-      .ball h1{
-      float: left;
-      }
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    title Hololens
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='Fullscreen Slit Slider with CSS3 and jQuery')
+    meta(name='keywords', content='slit slider, plugin, css3, transitions, jquery, fullscreen, autoplay')
+    meta(name='author', content='Codrops')
+    link(rel='shortcut icon', href='../favicon.ico')
+    link(rel='stylesheet', type='text/css', href='css/demo.css')
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    link(rel='stylesheet', type='text/css', href='css/custom.css')
+    script(type='text/javascript', src='js/modernizr.custom.79639.js')
+    noscript
+      link(rel='stylesheet', type='text/css', href='css/styleNoJS.css')
   body
-    article
-      section.a
-        ul
-          li
-            h1
-              marquee Teknologi Hololens
-        ul
-          li
-            h3 Nama Anggota Kelompok :
-          li 1.Nadhilah Putri Nst 151111526
-          li 2.Jesika Nauly Hutagalung 151112262
-          li 3.Sari Feronika Sitorus 151113462
-          li 4.Fadly Pranata Simanungkalit 151111992
-      section.b
-        ul
-          li
-            h2 Pengertian Microsoft Hololens
-        #slider
-          #slide-holder
-            .slide
-              img(src='img/hololen.jpg', alt='')
-            .slide
-              img(src='img/hol2.jpg', alt='')
-            .slide
-              img(src='img/hol3.jpg', alt='')
-            .slide
-              img(src='img/t.jpg', alt='')
-        p
-          b Microsoft HoloLens
-          |  adalah sebuah teknologi komputasi visual yang memiliki fungsi mirip seperti kacamata pintar. Microsoft Hololens menggabungkan antara virtual reality dan augmented reality sehingga menciptakan mixed reality. Mixed reality memungkinkan membawa tampilan grafis dalam dunia virtual ke dalam dunia nyata. Pengguna bisa berinteraksi dengan benda virtual yang dihasilkan oleh microsoft hololens.
-      section.z
-        ul
-          li
-            h2 Cara Kerja Microsoft Hololens
-        ul
-          li
-            h4
-              | Pada sebuah dinding kosong ,hololens ini bisa menampilkan sebuah layar televisi misalnya pada kulkas hololens bisa memperlihatkan bahan makanan apa saja yang harus kita beli .HoloLens ini juga mendukung produktivitas dan hiburan. Kita dapat menggunakan HoloLens untuk merancang desain 3D, apakah itu rumah, motor, mobil, helicopter, bahkan pesawat sekaligus.
-      section.z
-        .kiri
-          .card-container
-            .card
-              .side
-                img(src='img/g.jpg', alt='')
-              .side.back Microsoft Hololens untuk bermain game 
-          .card-container
-            .card
-              .side
-                img(src='img/h.jpg', alt='')
-              .side.back Microsoft Hololens untuk media sosial
-        .kanan
-          .card-container
-            .card
-              .side
-                img(src='img/hol.jpg', alt='')
-              .side.back Microsoft Hololens untuk bermain game
-          .card-container
-            .card
-              .side
-                img(src='img/hololens.jpg', alt='')
-              .side.back Microsoft Hololens untuk bermain game
-      section.y
-        ul
-          li
-            h2 Spesifikasi Teknis
-        ul
-          li
-            h3.c Optics :
-          li 1. See-through holographic lenses (waveguides)
-          li 2. 2HD 16:9 light engines
-          li 3. Automatic pupillary distance calibration
-          li 4. Holographic Resolution: 2.3M total light points
-          li 5. Holographic Density: >2.5k radiants (light points per radian)
-      section.y
-        ul
-          li
-            h2 Spesifikasi Teknis
-        ul
-          li
-            h3.c Input/ Output/ Connectivity :
-          li 1. Built-in speakers
-          li 2. Audio 3.5mm jack
-          li 3. Volume up/down
-          li 4. Brightness up/down
-          li 5. Tombol power
-          li 6. Battery status LEDs
-          li 7. Wi-Fi 802.11ac
-          li 8. Micro-USB 2.0
-          li 9. Kabel
-      section.y
-        ul
-          li
-            h2 Spesifikasi Teknis
-        ul
-          li
-            h3.c Sensors :
-          li 1. 1 IMU
-          li 2. 4 environment understanding cameras
-          li 3. 1 depth camera
-          li 4. 1 2MP photo / HD video camera
-          li 5. Mixed reality capture
-          li 6. 4 microphones
-          li 7. 1 ambient light sensor
-      section.y
-        ul
-          li
-            h2 Spesifikasi Teknis
-        ul
-          li
-            h3.c OS and Apps :
-          li a. Windows 10
-          li b. Windows Store
-        ul
-          li
-            h3.c Processors :
-          li a. Intel 32 bit architecture
-          li b. Microsoft Holographic Processing Unit (HPU 1.0)
-      section.y
-        ul
-          li
-            h2 Kelebihan Hololens:
-        ul
-          li
-            h3.c Ada 5 kelebihan Hololens:
-        ul
-          li 1. Tidak memiliki kabel, jadi tidak perlu terhubung dengan komputer
-          li
-            | 2. Lensa transparan dan sensor canggih sehingga pemakai bisa seakan-akan berada didalam apa yang dilihatnya
-          li
-            | 3. Ringan dan dapat disesuaikan dengan ukuran kepala masing-masing orang sehingga nyaman ketika digunakan.
-          li
-            | 4. Built-in suara spasial memungkinkan pemakai mendengar hologram dimanapun mereka berada di ruangan dengan posisi yang tepat.
-          li 5. Teknologi dimasa depan terbaru yang beroperasi di Windows 10 
-      section.y
-        ul
-          li
-            h2 Kelemahan Hololens:
-        ul
-          li
-            h3.c Ada 7 kelemahan Hololens:
-        ul
-          li 1. HoloLens secara signifikan lebih rendah-resolusi
-          li 2. Microsoft ingin Anda untuk fokus pada “kepadatan hologram”
-          li 3. Hologram akan muncul hanya pada jarak tertentu
-          li 4. pembatasan Memory akan membatasi game dan aplikasi
-          li 5. HoloLens akan melindungi diri dengan membunuh aplikasi Anda
-          li 6. Anda dapat merekam hologram, tapi hanya sebentar
-          li 7. Anda dapat mengontrol HoloLens jarak jauh
-      section.w
-        ul
-          li
-            h2 Perbedaan Hololens dan Virtual Reality
-            br
-        ul
-          li
-            p
-              | Holoens itu adalah pengabungan dari augmented reality sehingga menciptakan mixed reality.
-          li
-            p
-              | Virtual reality adalah teknologi yang dapat berinteraksi dengan suatu lingkungan yang disimulasikan oleh komputer.
-      section.x
-        .stage
-          figure.ball
-            h1 Thank You
-    script(src='build/build.js')
+    .container.demo-1
+      #slider.sl-slider-wrapper
+        .sl-slider
+          .sl-slide.bg-1(data-orientation='horizontal', data-slice1-rotation='-25', data-slice2-rotation='-25', data-slice1-scale='2', data-slice2-scale='2')
+            .sl-slide-inner
+              .deco(data-icon='H')
+              h2 Teknologi Hololens
+              br
+              blockquote
+                h3 Nama Kelompok : 
+                br
+                ul
+                  | 1. Nadhilah Putri Nst - 151111526
+                  br
+                  |                                     2. Jesika Nauly Hutagalung - 151112262
+                  br
+                  |                                     3. Sari Feronika Sitorus - 151113462
+                  br
+                  |                                     4. Fadly Pranata Simanungkalit - 151111992
+          .sl-slide.bg-2(data-orientation='vertical', data-slice1-rotation='10', data-slice2-rotation='-15', data-slice1-scale='1.5', data-slice2-scale='1.5')
+            .sl-slide-inner
+              .deco(data-icon='q')
+              h2 Pengertian Hololens
+              blockquote
+                p
+                  b Microsoft HoloLens
+                  |  adalah sebuah teknologi komputasi visual yang memiliki fungsi mirip seperti kacamata pintar. Microsoft Hololens menggabungkan antara virtual reality dan augmented reality sehingga menciptakan mixed reality. Mixed reality memungkinkan membawa tampilan grafis dalam dunia virtual ke dalam dunia nyata. Pengguna bisa berinteraksi dengan benda virtual yang dihasilkan oleh microsoft hololens.
+          .sl-slide.bg-3(data-orientation='horizontal', data-slice1-rotation='3', data-slice2-rotation='3', data-slice1-scale='2', data-slice2-scale='1')
+            .sl-slide-inner
+              .deco(data-icon='O')
+              h2 Cara Kerja Microsoft Hololens
+              blockquote
+                p
+                  | Pada sebuah dinding kosong ,hololens ini bisa menampilkan sebuah layar televisi misalnya pada kulkas hololens bisa memperlihatkan bahan makanan apa saja yang harus kita beli .HoloLens ini juga mendukung produktivitas dan hiburan. Kita dapat menggunakan HoloLens untuk merancang desain 3D, apakah itu rumah, motor, mobil, helicopter, bahkan pesawat sekaligus.
+          .sl-slide.bg-4(data-orientation='vertical', data-slice1-rotation='-5', data-slice2-rotation='25', data-slice1-scale='2', data-slice2-scale='1')
+            .sl-slide-inner
+              .deco(data-icon='I')
+              h2 Spesifikasi Hololens
+              br
+              blockquote
+                h3 Optics:
+                br
+                br
+                h4
+                  ul
+                    | 1. See-through holographic lenses (waveguides)
+                  ul
+                    | 2. 2HD 16:9 light engines
+                  ul
+                    | 3. Automatic pupillary distance calibration
+                  ul
+                    | 4. Holographic Resolution: 2.3M total light point
+                  ul
+                    | 5. Holographic Density: >2.5k radiants (light points per radian)
+          .sl-slide.bg-5(data-orientation='horizontal', data-slice1-rotation='-5', data-slice2-rotation='10', data-slice1-scale='2', data-slice2-scale='1')
+            .sl-slide-inner
+              .deco(data-icon='t')
+              h2 Spesifikasi Hololens:
+              blockquote
+                h3 Input/ Output/ Connectivity :
+                ul 1. Built-in speakers
+                ul 2. Audio 3.5mm jack
+                ul 3. Volume up/down
+                ul 4. Brightness up/down
+                ul 5. Tombol power
+                ul 6. Battery status LEDs
+                ul 7. Wi-Fi 802.11ac
+                ul 8. Micro-USB 2.0
+                ul 9. Kabel
+          .sl-slide.bg-5(data-orientation='horizontal', data-slice1-rotation='-5', data-slice2-rotation='10', data-slice1-scale='2', data-slice2-scale='1')
+            .sl-slide-inner
+              .deco(data-icon='t')
+              h2 Spesifikasi Hololens:
+              blockquote
+                h3 Sensors :
+                ul 1. 1 IMU
+                ul 2. 4 environment understanding cameras
+                ul 3. 1 depth camera
+                ul 4. 1 2MP photo / HD video camera
+                ul 5. Mixed reality capture
+                ul 6. 4 microphones
+                ul 7. 1 ambient light sensor
+        // /sl-slider
+        nav#nav-arrows.nav-arrows
+          span.nav-arrow-prev Previous
+          span.nav-arrow-next Next
+        nav#nav-dots.nav-dots
+          span.nav-dot-current
+          span
+          span
+          span
+          span
+      // /slider-wrapper
+    script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+    script(type='text/javascript', src='js/jquery.ba-cond.min.js')
+    script(type='text/javascript', src='js/jquery.slitslider.js')
+    script(type='text/javascript').
+      $(function() {
+      var Page = (function() {
+      var $navArrows = $( '#nav-arrows' ),
+      $nav = $( '#nav-dots > span' ),
+      slitslider = $( '#slider' ).slitslider( {
+      onBeforeChange : function( slide, pos ) {
+      $nav.removeClass( 'nav-dot-current' );
+      $nav.eq( pos ).addClass( 'nav-dot-current' );
+      }
+      } ),
+      init = function() {
+      initEvents();
+      },
+      initEvents = function() {
+      // add navigation events
+      $navArrows.children( ':last' ).on( 'click', function() {
+      slitslider.next();
+      return false;
+      } );
+      $navArrows.children( ':first' ).on( 'click', function() {
+      slitslider.previous();
+      return false;
+      } );
+      $nav.each( function( i ) {
+      $( this ).on( 'click', function( event ) {
+      var $dot = $( this );
+      if( !slitslider.isActive() ) {
+      $nav.removeClass( 'nav-dot-current' );
+      $dot.addClass( 'nav-dot-current' );
+      }
+      slitslider.jump( i + 1 );
+      return false;
+      } );
+      } );
+      };
+      return { init : init };
+      })();
+      Page.init();
+      /**
+      * Notes:
+      *
+      * example how to add items:
+      */
+      /*
+      var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+      // call the plugin's add method
+      ss.add($items);
+      */
+      });

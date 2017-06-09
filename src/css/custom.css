@@ -64,7 +64,8 @@
 
 /* Custom navigation arrows */
 h3{
-	font-size:20px;
+	font-size:30px;
+    color: blue;
 }
 .nav-arrows span {
 	position: absolute;
@@ -207,6 +208,86 @@ h3{
 	bottom: 50%;
 	margin: 0 0 -104px 0;
 }
+.demo-1 .sl-slide .oc {
+	color: lime;
+	text-shadow: 0 0 1px #000;
+	padding: 20px;
+	position: absolute;
+	font-size: 34px;
+	font-weight: 70px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	width: 80%;
+	left: 10%;
+	text-align: center;
+	line-height: 50px;
+	bottom: 70%;
+	margin: 0 0 -104px 0;
+}
+.demo-1 .sl-slide .js {
+	color: lime;
+	text-shadow: 0 0 1px #000;
+	padding: 20px;
+	position: absolute;
+	font-size: 34px;
+	font-weight: 70px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	width: 90%;
+	left: 5%;
+	text-align: center;
+	line-height: 50px;
+	bottom: 70%;
+	margin: 0 0 -104px 0;
+}
+.demo-1 .sl-slide .aw h2 {
+	color: deeppink;
+	text-shadow: 0 0 1px #000;
+	padding: 20px;
+	position: absolute;
+	font-size: 34px;
+	font-weight: 70px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	width: 80%;
+	left: 10%;
+	text-align: center;
+	line-height: 30px;
+	bottom: 60%;
+	margin: 0 0 -104px 0;
+}
+.demo-1 .sl-slide .jk h2 {
+	color: gold;
+	text-shadow: 0 0 1px #000;
+	padding: 20px;
+	position: absolute;
+	font-size: 34px;
+	font-weight: 70px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	width: 80%;
+	left: 10%;
+	text-align: center;
+	line-height: 30px;
+	bottom: 60%;
+	margin: 0 0 -104px 0;
+}
+.demo-1 .sl-slide .kj h2 {
+	color: red;
+	text-shadow: 0 0 1px #000;
+	padding: 20px;
+	position: absolute;
+	font-size: 34px;
+	font-weight: 70px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	width: 80%;
+	left: 10%;
+	text-align: center;
+	line-height: 30px;
+	bottom: 60%;
+	margin: 0 0 -104px 0;
+}
 .sl-slide-inner .coba h2{
 	color: #0f2af5;
 	text-shadow: 3px 3px 0px white;
@@ -225,7 +306,7 @@ h3{
 	bottom: 50%;
 }
 .sl-slide-inner .coba h3{
-	font-size: 20px;
+	font-size: 40px;
 	color: black;
 	font-weight: bold;
 	margin-top: -95px;
@@ -246,18 +327,123 @@ h3{
 	margin: 0 0 -200px 0;
 	padding: 0;
 }
-
-.demo-1 .sl-slide blockquote p{
-	margin: 0 auto;
-	width: 860px;
-	color: white;
+.demo-1 .sl-slide .qw {
+	width: 100%;
+	text-align: center;
+	left: 0;
+	font-weight: 400;
 	font-size: 20px;
+	line-height: 30px;
+	height: 70px;
+	color: white;
+	z-index: 2;
+	bottom: 50%;
+	margin: 0 0 -200px 0;
+	padding: 370px;
+}
+.demo-1 .sl-slide .sj {
+	width: 100%;
 	text-align: justify;
+	left: 0;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	height: 70px;
+	color: red;
+	z-index: 1;
+	bottom: 50%;
+	margin: 0 0 -200px 0;
+	padding: 370px;
+}
+.demo-1 .sl-slide .bl {
+	width: 100%;
+	text-align: center;
+	left: 0;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	height: 70px;
+	color: aqua;
+	z-index: 2;
+	bottom: 50%;
+	margin: 0 0 -200px 0;
+	padding-top: 370px;
+}
+.demo-1 .sl-slide .dl {
+	width: 100%;
+	text-align: center;
+	left: 0;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	height: 70px;
+	color: aqua;
+	z-index: 2;
+	bottom: 50%;
+	margin: 0 0 -200px 0;
+	padding-top: 220px;
+}
+.demo-1 .sl-slide .bl .bi {
+	width: 100%;
+	text-align: center;
+	left: 0;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 10px;
+	height: 70px;
+	color: aqua;
+	z-index: 2;
+	bottom: 50%;
+	margin: 0 0 -200px 0;
+	padding-top: 10px;
+}
+.demo-1 .sl-slide .bl .ib {
+	width: 100%;
+	text-align: center;
+	left: 0;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	height: 70px;
+	color: lime;
+	z-index: 2;
+	bottom: 50%;
+	margin: 0 0 -200px 0;
+	padding-top: 10px;
+}
+.demo-1 .sl-slide .bl .op {
+	width: 100%;
+	text-align: center;
+	left: 0;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	height: 70px;
+	color: crimson;
+	z-index: 2;
+	bottom: 50%;
+	margin: 0 0 -200px 0;
+	padding-top: 10px;
 }
 
+.demo-1 .sl-slide blockquote .ab{
+	margin: 0 auto;
+	width: 900px;
+	color: white;
+	font-size: 25px;
+	text-align: justify;
+	line-height: 30px;
+    
+}.demo-1 .sl-slide blockquote p{
+	margin: 0 auto;
+	width: 900px;
+	color: red;
+	font-size: 25px;
+	text-align: justify;
+	line-height: 30px;
+}
 .demo-1 .sl-slide blockquote p:before {
 	color: #f0f0f0;
-	color: rgba(244,244,244,0.65);
 	font-family: "Bookman Old Style", Bookman, Garamond, serif;
 	position: absolute;
 	line-height: 60px;
@@ -298,7 +484,8 @@ h3{
 
 .demo-1 .bg-2 [data-icon]:after,
 .demo-1 .bg-2 h2 {
-	color: #fff;
+	color: cyan;
+    text-shadow: 5px 5px 5px black;
 	font-family: Monotype Corsiva;
 }
 
@@ -326,7 +513,7 @@ h3{
 
 .demo-1 .bg-3 h2,
 .demo-1 .bg-3 blockquote{
-	color: #fff;
+	color: yellow;
 	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
 }
 
@@ -352,10 +539,16 @@ h3{
 
 .demo-1 .bg-4 h2,
 .demo-1 .bg-4 blockquote{
-	color: #fff;
+	color:lime;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    font-size: 30px;
 }
-
+.demo-1 .bg-4 .bc,
+.demo-1 .bg-4 blockquote{
+	color: white;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    font-size: 25px;
+}
 .demo-1 .bg-4 blockquote:before {
 	color: #379eaa;
 }
@@ -743,6 +936,7 @@ h3{
 
 	.demo-1 .sl-slide blockquote p:before {
 		line-height: 10px;
+        color: black;
 		width: 40px;
 		height: 40px;
 		font-size: 120px;

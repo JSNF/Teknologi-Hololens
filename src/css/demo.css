@@ -39,10 +39,35 @@ body {
     color: #333;
     -webkit-font-smoothing: antialiased;
 }
+.deco .gbr1 img{
+	width: 350px;
+	height: 290px;
+	border-radius: 50px;
+}
+.deco img{
+	width: 350px;
+	height: 290px;
+	border-radius: 100%;
+}
 
 a {
 	color: #555;
 	text-decoration: none;
+}
+.coba ul {
+	color: black;
+	font-size: 25px;
+	font-weight: bold;
+	text-align:justify;
+	margin-left: 390px;
+	margin-top: -10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	border-bottom: 2px solid #000;
+	border-top: 2px solid #000;
+	width: 540px;
+
 }
 
 .container {

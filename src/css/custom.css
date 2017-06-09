@@ -63,7 +63,9 @@
 }
 
 /* Custom navigation arrows */
-
+h3{
+	font-size:20px;
+}
 .nav-arrows span {
 	position: absolute;
 	z-index: 2000;
@@ -162,15 +164,13 @@
 /* Content elements */
 
 .demo-1 .deco {
-	width: 260px;
-	height: 260px;
-	border: 2px dashed #ddd;
-	border: 2px dashed rgba(150,150,150,0.4);
 	border-radius: 50%;
 	position: absolute;
 	bottom: 50%;
 	left: 50%;
-	margin: 0 0 0 -130px;
+	margin-bottom: 20px;
+	margin-left: -180px;
+
 }
 
 .demo-1 [data-icon]:after {
@@ -192,20 +192,43 @@
 }
 
 .demo-1 .sl-slide h2 {
-	color: #000;
+	color: #0f2af5;
 	text-shadow: 0 0 1px #000;
 	padding: 20px;
 	position: absolute;
 	font-size: 34px;
-	font-weight: 700;
-	letter-spacing: 13px;
+	font-weight: 70px;
+	letter-spacing: 10px;
 	text-transform: uppercase;
 	width: 80%;
 	left: 10%;
 	text-align: center;
 	line-height: 50px;
 	bottom: 50%;
-	margin: 0 0 -120px 0;
+	margin: 0 0 -104px 0;
+}
+.sl-slide-inner .coba h2{
+	color: #0f2af5;
+	text-shadow: 3px 3px 0px white;
+	font-family: "Goudy Stout",Goudy,monospace;
+	margin: 0 0 -45px 0;
+	padding: 20px;
+	position: absolute;
+	font-size: 34px;
+	font-weight: 70px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	width: 80%;
+	left: 10%;
+	text-align: center;
+	line-height: 50px;
+	bottom: 50%;
+}
+.sl-slide-inner .coba h3{
+	font-size: 20px;
+	color: black;
+	font-weight: bold;
+	margin-top: -95px;
 }
 
 .demo-1 .sl-slide blockquote {
@@ -226,9 +249,10 @@
 
 .demo-1 .sl-slide blockquote p{
 	margin: 0 auto;
-	width: 60%;
-	max-width: 400px;
-	position: relative;
+	width: 860px;
+	color: white;
+	font-size: 20px;
+	text-align: justify;
 }
 
 .demo-1 .sl-slide blockquote p:before {
@@ -260,18 +284,22 @@
 /* First Slide */
 .demo-1 .bg-1 .sl-slide-inner,
 .demo-1 .bg-1 .sl-content-slice {
-	background: #fff;
+	background-image:url(t.jpg) ;
+	background-size:cover;
+	opacity:100em;
 }
 
 /* Second Slide */
 .demo-1 .bg-2 .sl-slide-inner,
 .demo-1 .bg-2 .sl-content-slice {
-	background: #000;
+	background-image:url(s.jpg) ;
+	background-size:cover;
 }
 
 .demo-1 .bg-2 [data-icon]:after,
 .demo-1 .bg-2 h2 {
 	color: #fff;
+	font-family: Monotype Corsiva;
 }
 
 .demo-1 .bg-2 blockquote:before {
@@ -281,7 +309,8 @@
 /* Third Slide */
 .demo-1 .bg-3 .sl-slide-inner,
 .demo-1 .bg-3 .sl-content-slice {
-	background: #db84ad;
+	background-image:url(night.jpg) ;
+	
 }
 
 .demo-1 .bg-3 .deco {
@@ -308,7 +337,8 @@
 /* Forth Slide */
 .demo-1 .bg-4 .sl-slide-inner,
 .demo-1 .bg-4 .sl-content-slice {
-	background: #5bc2ce;
+	background-image:url(sunsett.jpg) ;
+	background-size:cover;
 }
 
 .demo-1 .bg-4 .deco {
@@ -333,7 +363,8 @@
 /* Fifth Slide */
 .demo-1 .bg-5 .sl-slide-inner,
 .demo-1 .bg-5 .sl-content-slice {
-	background: #ffeb41;
+	background-image:url(gunung.jpg) ;
+	background-size:cover;
 }
 
 .demo-1 .bg-5 .deco {
@@ -350,11 +381,175 @@
 	color: #000;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
-
+.demo-1 .bg-5 h3{
+	
+}
+.demo-1 .bg-5 ul{
+	height:14px;
+}
 .demo-1 .bg-5 blockquote:before {
 	color: #ecd82c;
 }
 
+/* six Slide */
+.demo-1 .bg-6 .sl-slide-inner,
+.demo-1 .bg-6 .sl-content-slice {
+	background-image:url(aaa.jpg) ;
+	background-size:cover;
+	
+}
+
+.demo-1 .bg-6 .deco {
+	border-color: #fff;
+	border-color: rgba(255,255,255,0.5);
+}
+
+.demo-1 .bg-6 [data-icon]:after {
+	color: #fff;
+	text-shadow: 0 0 1px #fff;
+	box-shadow: inset 0 0 0 10px #b55381;
+}
+
+.demo-1 .bg-6 h2,
+.demo-1 .bg-6 blockquote{
+	color: #fff;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+
+.demo-1 .bg-6 blockquote:before {
+	color: #c46c96;
+}
+/* seven Slide */
+.demo-1 .bg-7 .sl-slide-inner,
+.demo-1 .bg-7 .sl-content-slice {
+	background-image:url(night.jpg) ;
+	
+}
+
+.demo-1 .bg-7 .deco {
+	border-color: #fff;
+	border-color: rgba(255,255,255,0.5);
+}
+
+.demo-1 .bg-7 [data-icon]:after {
+	color: #fff;
+	text-shadow: 0 0 1px #fff;
+	box-shadow: inset 0 0 0 10px #b55381;
+}
+
+.demo-1 .bg-7 h2,
+.demo-1 .bg-7 blockquote{
+	color: #fff;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+
+.demo-1 .bg-7 blockquote:before {
+	color: #c46c96;
+}
+/* eight Slide */
+.demo-1 .bg-8 .sl-slide-inner,
+.demo-1 .bg-8 .sl-content-slice {
+	background-image:url(night.jpg) ;
+	
+}
+
+.demo-1 .bg-8 .deco {
+	border-color: #fff;
+	border-color: rgba(255,255,255,0.5);
+}
+
+.demo-1 .bg-8 [data-icon]:after {
+	color: #fff;
+	text-shadow: 0 0 1px #fff;
+	box-shadow: inset 0 0 0 10px #b55381;
+}
+
+.demo-1 .bg-8 h2,
+.demo-1 .bg-8 blockquote{
+	color: #fff;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+
+.demo-1 .bg-8 blockquote:before {
+	color: #c46c96;
+}
+/* nine Slide */
+.demo-1 .bg-9 .sl-slide-inner,
+.demo-1 .bg-9 .sl-content-slice {
+	background-image:url(night.jpg) ;
+	
+}
+
+.demo-1 .bg-9 .deco {
+	border-color: #fff;
+	border-color: rgba(255,255,255,0.5);
+}
+
+.demo-1 .bg-9 [data-icon]:after {
+	color: #fff;
+	text-shadow: 0 0 1px #fff;
+	box-shadow: inset 0 0 0 10px #b55381;
+}
+
+.demo-1 .bg-9 h2,
+.demo-1 .bg-9 blockquote{
+	color: #fff;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+
+.demo-1 .bg-9 blockquote:before {
+	color: #c46c96;
+}
+/* ten Slide */
+.demo-1 .bg-10 .sl-slide-inner,
+.demo-1 .bg-10 .sl-content-slice {
+	background-image:url(night.jpg) ;
+	
+}
+
+.demo-1 .bg-10 .deco {
+	border-color: #fff;
+	border-color: rgba(255,255,255,0.5);
+}
+
+.demo-1 .bg-10 [data-icon]:after {
+	color: #fff;
+	text-shadow: 0 0 1px #fff;
+	box-shadow: inset 0 0 0 10px #b55381;
+}
+
+.demo-1 .bg-10 h2,
+.demo-1 .bg-10 blockquote{
+	color: #fff;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+/* eleven Slide */
+.demo-1 .bg-11 .sl-slide-inner,
+.demo-1 .bg-11 .sl-content-slice {
+	background-image:url(night.jpg) ;
+	
+}
+
+.demo-1 .bg-11 .deco {
+	border-color: #fff;
+	border-color: rgba(255,255,255,0.5);
+}
+
+.demo-1 .bg-11 [data-icon]:after {
+	color: #fff;
+	text-shadow: 0 0 1px #fff;
+	box-shadow: inset 0 0 0 10px #b55381;
+}
+
+.demo-1 .bg-11 h2,
+.demo-1 .bg-11 blockquote{
+	color: #fff;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+
+.demo-1 .bg-11 blockquote:before {
+	color: #c46c96;
+}
 .demo-2 .bg-img-1 {
 	background-image: url(../images/1.jpg);
 }

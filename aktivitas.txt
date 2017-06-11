@@ -1,0 +1,136 @@
+1. commit 702f25c38778d8e1ab1b9d0b64060a0a3adf6d72
+Author: jesikahutagalung <jessicahutagalung96@gmail.com>
+Date:   Fri May 19 13:54:51 2017 +0700
+"First commit"
+
+2. commit 7717818dd5cfe6f3d648ec84a0d7ccf44c31c8fb
+Author: nadhilahputrinst <nadhilahputri@outlook.com>
+Date:   Fri May 19 16:08:56 2017 +0700
+"First commit"
+
+3. commit c987fd70fe98b2b5de717bece7f562582ed0130d
+Author: jesikahutagalung <jessicahutagalung96@gmail.com>
+Date:   Sun May 21 19:31:30 2017 +0700
+"First Commit"
+
+4. commit a0ef581b0f10b62c7be2915d158f8d796d347c0c
+Merge: c987fd7 7717818
+Author: jesikahutagalung <jessicahutagalung96@gmail.com>
+Date:   Mon May 22 15:21:21 2017 +0700
+"Komentar"
+
+5. commit a947199b10c6b97ae818686d5cab0f56d5879a7f
+Author: sariferonika <sariferonika09@gmail.com>
+Date:   Mon May 22 16:25:15 2017 +0700
+"Komentar"
+
+6. commit e7ccf3196837c4719bf6ef1f1d4259fcdf39ae60
+Author: nadhilahputrinst <nadhilahputri@outlook.com>
+Date:   Mon May 22 16:41:51 2017 +0700
+"Editing"
+
+7. commit ef078c0cea6f962af7a5f71bb97dfcab1a6ad62c
+Author: fadlypranata <fadliipranata@gmail.com>
+Date:   Tue May 23 16:19:45 2017 +0700
+"Menambahkan Isi"
+
+
+8. commit dc48c3ca4fdc846fce0c5def3b8e9efa14868a9b
+Author: nadhilahputrinst <nadhilahputri@outlook.com>
+Date:   Tue May 23 22:50:38 2017 +0700
+"Editing"
+
+9. commit 34bc18f830410b04d2f3335ab2003208f3ecd9e6
+Author: jesikahutagalung <jessicahutagalung96@gmail.com>
+Date:   Sat May 27 21:24:39 2017 +0700
+"commit"
+
+10. commit 9989ecfdd497721d4944e02143385327d7457e18
+Merge: 34bc18f dc48c3c
+Author: jesikahutagalung <jessicahutagalung96@gmail.com>
+Date:   Sat May 27 21:29:39 2017 +0700
+"Editing"
+
+11. commit 72bce72d3c8deea3a7d42815aefeee7e7574f65d
+Author: jesikahutagalung <jessicahutagalung96@gmail.com>
+Date:   Mon May 29 15:27:00 2017 +0700
+"mengubah tampilan pada index.jade"
+
+12. commit a04b73617f6e4e30147b76901981b00b2a30c6a7
+Author: jesikahutagalung <jessicahutagalung96@gmail.com>
+Date:   Mon May 29 15:42:23 2017 +0700
+"revisi index.jade"
+
+13. commit a444bb8ccf100a9c2198d4662a2e74c4d9c77e00
+Author: sariferonika <sariferonika09@gmail.com>
+Date:   Mon May 29 22:26:41 2017 +0700
+"Menambahkan spesifikasi hololens dan menganti warna tulisan pada index.jade"
+
+14. commit ae759b11e1e43bd8d130b79306ce2502f1479e84
+Author: nadhilahputrinst <nadhilahputri@outlook.com>
+Date:   Tue May 30 06:19:27 2017 +0700
+"Mengganti background dan mengubah beberapa warna tulisan"
+
+
+15. commit 3774a1a22e672e547602adc3f27821a0e465d724
+Author: nadhilahputrinst <nadhilahputri@outlook.com>
+Date:   Tue May 30 06:37:18 2017 +0700
+"Mengubah background dan warna tulisan"
+
+
+16. commit 3d72ced2bcf21e55fd6eafea86983c062757992a
+Author: sariferonika <sariferonika09@gmail.com>
+Date:   Tue May 30 19:37:42 2017 +0700
+"menambahkan kelemahan hololens dan menambah perbedaan hololens dan virtual reality pada index.jade"
+
+
+17. commit bfbf74f52324253ab240f831a0b0a25d7dce974d
+Author: nadhilahputrinst <nadhilahputri@outlook.com>
+Date:   Thu Jun 1 16:14:43 2017 +0700
+"Menambahkan gambar & kelebihan hololens"
+
+
+18. commit 9539faa7f32f07be5303779ed03eba45a751e2da
+Author: sariferonika <sariferonika09@gmail.com>
+Date:   Thu Jun 1 23:24:48 2017 +0700
+"menganti sedikit penampilan pada index.jade"
+
+
+19. commit db74a155e898a11165fe8884f3de43e63787ba40
+Author: jesikahutagalung <jessicahutagalung96@gmail.com>
+Date:   Fri Jun 2 13:51:20 2017 +0700
+"perubahan pada index.jade dan menambahkan gambar pada tampilan persentasi"
+
+
+20. commit b0b7db5ed955c04cc6d72e36ed976e8685ee96d0
+Author: sariferonika <sariferonika09@gmail.com>
+Date:   Tue Jun 6 01:02:40 2017 +0700
+"menganti tema pada index.jade"
+
+
+21. commit ad70fdb69d62d9d79b374ccbf3322a699ffc4f56
+Author: jesikahutagalung <jessicahutagalung96@gmail.com>
+Date:   Tue Jun 6 22:35:27 2017 +0700
+"Mengubah tampilan index.jade dan menambahkan gambar tentang hololens
+
+
+
+22. commit 609ecfdb712fb7be390ea0330c472f09ebadbf0c
+Author: nadhilahputrinst <nadhilahputri@outlook.com>
+Date:   Fri Jun 9 13:45:07 2017 +0700
+"Menambah isi halaman dan Tampilan background"
+
+23. commit a2e5ee8e6fad7ce6345ebcff42338cf0b67687a4
+Author: sariferonika <sariferonika09@gmail.com>
+Date:   Sat Jun 10 00:10:30 2017 +0700
+"menganti warna tulisan dan mengatur tuisan"
+
+24. commit 4a3c6d40fcea86ccb8376f30e5fddb00297da588
+Author: fadlypranata <fadliipranata@gmail.com>
+Date:   Sun Jun 11 10:49:17 2017 +0700
+"Edit Desain"
+
+25. commit 47c2b8d1ecdad26d7b5964a6d00ff2b8ebfc45b1
+Author: fadlypranata <fadliipranata@gmail.com>
+Date:   Sun Jun 11 11:57:14 2017 +0700
+"Edit Background"
